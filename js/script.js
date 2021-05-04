@@ -914,8 +914,8 @@ if ($(this).find('#my_camera').length) {
 	});
 	
 // audio video player post	
-new Plyr(".video-player"),
-new Plyr(".audio-player")
+// new Plyr(".video-player"),
+// new Plyr(".audio-player")
 	
 //image with comment sidebar of fancy box
 	  $('[data-fancybox="cl-group"]').fancybox({
