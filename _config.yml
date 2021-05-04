@@ -9,3 +9,4 @@ exclude:
   - "package*.json"
   - "assets"
   - "node_modules"
+theme: jekyll-theme-slate
