@@ -8,6 +8,7 @@
     <title>Questionnaire</title>
 
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/vendor/uikit.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/color.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -378,125 +379,53 @@
         </aside>
         <!-- main-wraper -->
         <div class="main-wraper col-lg-9">
-          <div class="videos-caro-index">
-            <div class="item-video" data-merge="2" href="quest-page.html">
-                <a
-                  class="owl-video"
-                  href="https://www.youtube.com/watch?v=MQlwIGeS7ao"
-                ></a>
-                <div>
-                  <a href="quest-page.html">
-                  <svg
-                  class="mr-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-message-square"
-                  >
-                    <path
-                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-                    ></path></svg
-                >
-                寫問卷
-                </a>
-              </div>
-              </a>
-            </div>
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=YQ9oeTHsugQ"
-              ></a>
-            </div>
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=xpsDs6fzsNI"
-              ></a>
-            </div>
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=7lxSQ84jeG0"
-              ></a>
-            </div>
-          </div>
-          <div class="videos-caro mt-5">
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=MQlwIGeS7ao"
-              ></a>
-              <div class="posted-user">
-                <img src="./images/resources/user4.jpg" alt="" />
-                <span>Frank J.</span>
-              </div>
-              <div class="vid-info">
-                <span>1 year ago</span>
-                <span><i class="icofont-eye-open"></i> 3.1k</span>
-              </div>
-            </div>
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=YQ9oeTHsugQ"
-              ></a>
-              <div class="posted-user">
-                <img src="./images/resources/user2.jpg" alt="" />
-                <span>Maria K.</span>
-              </div>
-              <div class="vid-info">
-                <span>2 weeks ago</span>
-                <span><i class="icofont-eye-open"></i> 1.1k</span>
-              </div>
-            </div>
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=xpsDs6fzsNI"
-              ></a>
-              <div class="posted-user">
-                <img src="./images/resources/user1.jpg" alt="" />
-                <span>Jack Carter</span>
-              </div>
-              <div class="vid-info">
-                <span>4 weeks ago</span>
-                <span><i class="icofont-eye-open"></i> 20k</span>
-              </div>
-            </div>
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=xpsDs6fzsNI"
-              ></a>
-              <div class="posted-user">
-                <img src="./images/resources/user1.jpg" alt="" />
-                <span>Jack Carter</span>
-              </div>
-              <div class="vid-info">
-                <span>4 weeks ago</span>
-                <span><i class="icofont-eye-open"></i> 20k</span>
-              </div>
-            </div>
-            <div class="item-video" data-merge="2">
-              <a
-                class="owl-video"
-                href="https://www.youtube.com/watch?v=7lxSQ84jeG0"
-              ></a>
-              <div class="posted-user">
-                <img src="./images/resources/user3.jpg" alt="" />
-                <span>Fawad Jan</span>
-              </div>
-              <div class="vid-info">
-                <span>1 Month ago</span>
-                <span><i class="icofont-eye-open"></i> 8k</span>
-              </div>
+          <div class="post-meta">
+            <h4>When your private pictures are used against you</h4>
+            <p>
+              A film about a secret of a housewife which is revealed on her 3rd
+              Wedding Anniversary
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/MQlwIGeS7ao"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+            <div>
+              <ul uk-accordion>
+                <li class="uk-open">
+                  <a class="uk-accordion-title" href="#">Item 1</a>
+                  <div class="uk-accordion-content">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title" href="#">Item 2</a>
+                  <div class="uk-accordion-content">
+                    <p>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor reprehenderit.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title" href="#">Item 3</a>
+                  <div class="uk-accordion-content">
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat proident.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -655,7 +584,7 @@
       integrity="sha512-AFwxAkWdvxRd9qhYYp1qbeRZj6/iTNmJ2GFwcxsMOzwwTaRwz2a/2TX225Ebcj3whXte1WGQb38cXE5j7ZQw3g=="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/vendor/owl.carousel.min.js"></script>
+    <script src="./js/vendor/uikit.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
