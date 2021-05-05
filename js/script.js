@@ -188,10 +188,10 @@ jQuery(document).ready(function ($) {
   });
 
   //--- bootstrap tooltip and popover
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
-  });
+  // $(function () {
+  //   $('[data-toggle="tooltip"]').tooltip();
+  //   $('[data-toggle="popover"]').popover();
+  // });
 
   // share post popup //
   $('.share-to').on('click', function () {
@@ -718,9 +718,18 @@ jQuery(document).ready(function ($) {
           items: 2,
         },
         1000: {
-          items: 3,
+          items: 5,
         },
       },
+    });
+    // videos caro
+    $('.videos-caro-index').owlCarousel({
+      items: 1,
+      loop: true,
+      video: true,
+      lazyLoad: true,
+      autoplay: true,
+      // animateOut: 'fadeOut',
     });
 
     // sponsored caro
@@ -900,21 +909,21 @@ jQuery(document).ready(function ($) {
   // new Plyr(".audio-player")
 
   //image with comment sidebar of fancy box
-  $('[data-fancybox="cl-group"]').fancybox({
-    baseClass: 'fancybox-custom-layout',
-    infobar: false,
-    touch: {
-      vertical: false,
-    },
-    buttons: ['close', 'thumbs', 'share'],
-    animationEffect: 'fade',
-    transitionEffect: 'fade',
-    preventCaptionOverlap: false,
-    idleTime: false,
-    gutter: 0,
-    // Customize caption area
-    caption: function (instance) {
-      return '<h3>home</h3><p>interiors, exteriors, and the humans that inhabit them.</p><p><a href="https://unsplash.com/collections/curated/162" target="_blank">unsplash.com</a></p>';
-    },
-  });
+  // $('[data-fancybox="cl-group"]').fancybox({
+  //   baseClass: 'fancybox-custom-layout',
+  //   infobar: false,
+  //   touch: {
+  //     vertical: false,
+  //   },
+  //   buttons: ['close', 'thumbs', 'share'],
+  //   animationEffect: 'fade',
+  //   transitionEffect: 'fade',
+  //   preventCaptionOverlap: false,
+  //   idleTime: false,
+  //   gutter: 0,
+  //   // Customize caption area
+  //   caption: function (instance) {
+  //     return '<h3>home</h3><p>interiors, exteriors, and the humans that inhabit them.</p><p><a href="https://unsplash.com/collections/curated/162" target="_blank">unsplash.com</a></p>';
+  //   },
+  // });
 }); //document ready end
