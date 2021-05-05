@@ -2106,10 +2106,12 @@ aside .widget {
   width: 100%;
 }
 .sidebar .widget li {
-  display: inline-block;
+  display: flex;
   margin-bottom: 14px;
   position: relative;
   width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 .sidebar .widget > ul > li:last-child {
   margin-bottom: 0;
@@ -9159,6 +9161,7 @@ a.main-btn2:hover,
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
+  margin-right: 8px;
 }
 .watchlist > li figure img {
   border: 1px solid red;
@@ -9181,10 +9184,10 @@ a.main-btn2:hover,
   background: red none repeat scroll 0 0;
   border-radius: 100%;
   display: inline-block;
-  float: right;
+  /* float: right; */
   height: 10px;
-  position: absolute;
-  top: 20px;
+  /* position: absolute;
+  top: 20px; */
   width: 10px;
 }
 .watchlist > li.active {
