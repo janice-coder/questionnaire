@@ -1,3 +1,6 @@
 .nightview .watchlist > li.active {
   background: transparent;
 }
+.uk-accordion-content {
+  margin: 20px 0;
+}
