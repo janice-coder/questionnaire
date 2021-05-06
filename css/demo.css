@@ -10,3 +10,14 @@
 .w-30 {
   width: 30px;
 }
+.sidebar .widget li a {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.button.grey.circle,
+a.button.grey.circle {
+  border-radius: 30px;
+}

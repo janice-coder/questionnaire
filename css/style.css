@@ -12149,7 +12149,7 @@ ul.chat-rooms {
 }
 .posted-user {
   display: inline-block;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   vertical-align: middle;
 }
 .item-video .posted-user > img {
@@ -12169,6 +12169,8 @@ ul.chat-rooms {
   float: right;
   font-size: 11px;
   margin-top: 18px;
+  display: flex;
+  align-items: center;
 }
 .vid-info > span {
   margin: 0 5px;

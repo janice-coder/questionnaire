@@ -204,11 +204,11 @@ jQuery(document).ready(function ($) {
   });
 
   // watch list unread
-  $('.watchlist > li').on('click', function () {
-    $(this).removeClass('unread');
-    $(this).addClass('active').siblings().removeClass('active');
-    return false;
-  });
+  // $('.watchlist > li').on('click', function () {
+  //   $(this).removeClass('unread');
+  //   $(this).addClass('active').siblings().removeClass('active');
+  //   return false;
+  // });
 
   // smiles for chat //
   $('.add-smiles').on('click', function () {
