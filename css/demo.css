@@ -4,3 +4,6 @@
 .uk-accordion-content {
   margin: 20px 0;
 }
+.hover-pointer {
+  cursor: pointer;
+}
