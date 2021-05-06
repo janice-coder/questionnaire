@@ -9162,6 +9162,7 @@ a.main-btn2:hover,
   margin-bottom: 0;
   vertical-align: middle;
   margin-right: 8px;
+  width: 30px;
 }
 .watchlist > li figure img {
   border: 1px solid red;
