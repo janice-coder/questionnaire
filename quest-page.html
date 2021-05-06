@@ -93,43 +93,8 @@
             </form>
           </div>
           <ul class="web-elements">
-            <li>
-              <div class="user-dp">
-                <a href="javascript:;" title="">
-                  <img alt="" src="./images/resources/user.jpg" />
-                  <div class="name">
-                    <h4>Danial Cardos</h4>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li>
-              <a
-                class="mesg-notif"
-                href="#"
-                title="Messages"
-                data-toggle="tooltip"
-              >
-                <i>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-message-square"
-                  >
-                    <path
-                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-                    ></path></svg
-                ></i>
-              </a>
-              <span></span>
-            </li>
+            <li><button class="button primary btn-sm">登入</button></li>
+            <li><button class="button light btn-sm">註冊</button></li>
           </ul>
         </div>
       </header>
@@ -380,7 +345,7 @@
         <!-- main-wraper -->
         <div class="main-wraper col-lg-9">
           <div class="post-meta">
-            <h4>When your private pictures are used against you</h4>
+            <h4>直播影片標題</h4>
             <p>
               A film about a secret of a housewife which is revealed on her 3rd
               Wedding Anniversary
@@ -396,17 +361,32 @@
             <div>
               <ul uk-accordion>
                 <li class="uk-open">
-                  <a class="uk-accordion-title" href="#">Item 1</a>
+                  <a class="uk-accordion-title" href="#"
+                    >問題 1：為什麼喜歡看這個遊戲直播？</a
+                  >
                   <div class="uk-accordion-content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
+                    <div
+                      class="uk-margin uk-grid-small uk-child-width-auto uk-grid"
+                    >
+                      <label
+                        ><input
+                          class="uk-radio"
+                          type="radio"
+                          name="radio2"
+                          checked
+                        />A</label
+                      >
+                      <label
+                        ><input class="uk-radio" type="radio" name="radio2" />
+                        B</label
+                      >
+                    </div>
                   </div>
                 </li>
                 <li>
-                  <a class="uk-accordion-title" href="#">Item 2</a>
+                  <a class="uk-accordion-title" href="#"
+                    >問題 2：為什麼喜歡看這個遊戲直播？</a
+                  >
                   <div class="uk-accordion-content">
                     <p>
                       Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -416,7 +396,9 @@
                   </div>
                 </li>
                 <li>
-                  <a class="uk-accordion-title" href="#">Item 3</a>
+                  <a class="uk-accordion-title" href="#"
+                    >問題 3：為什麼喜歡看這個遊戲直播？</a
+                  >
                   <div class="uk-accordion-content">
                     <p>
                       Duis aute irure dolor in reprehenderit in voluptate velit
