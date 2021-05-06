@@ -21,3 +21,21 @@
 a.button.grey.circle {
   border-radius: 30px;
 }
+.sidemenu {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  z-index: 11;
+}
+.sidemenu button {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  transform: rotate(-90deg);
+  border: 0 !important;
+  background: transparent !important;
+  color: #62d76b !important;
+}
+nav.sidebar {
+  left: -250px;
+}
