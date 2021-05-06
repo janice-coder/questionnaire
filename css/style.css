@@ -553,7 +553,6 @@ iframe {
 .responsive-header {
   background: #f5f5f5 none repeat scroll 0 0;
   border-bottom: 1px solid #e1e8ed;
-  display: none;
   line-height: 40px;
   padding: 5px 15px;
   position: relative;
