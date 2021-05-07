@@ -24,7 +24,7 @@ a.button.grey.circle {
 .sidemenu {
   position: absolute;
   right: 0;
-  top: 42px;
+  top: 35px;
   z-index: 11;
 }
 .sidemenu button {
@@ -38,4 +38,7 @@ a.button.grey.circle {
 }
 nav.sidebar {
   left: -250px;
+}
+.icofont-book-mark {
+  font-size: 3.5rem;
 }

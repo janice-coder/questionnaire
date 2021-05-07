@@ -101,13 +101,23 @@
       </header>
       <!--mobile nav sidebar -->
       <nav class="sidebar">
-        <nav class="sidebar">
+        <div class="sidemenu">
+          <button
+            class="button white btn-sm uk-button-default dropdown-arrow p-2 mr-2 d-lg-none d-xl-none"
+          >
+            <i class="icofont-book-mark"></i>
+          </button>
+        </div>
+        <div
+          class=""
+          style="height: 100vh; overflow: auto; padding-bottom: 150px"
+        >
           <div class="widget stick-widget px-3 w-100">
             <h4 class="main-title">
               <i class="icofont-paper"></i>
               問卷開放中
             </h4>
-            <ul class="watchlist">
+            <ul class="watchlist m-0">
               <li>
                 <a href="quest-page.html">
                   <div class="d-flex">
@@ -215,12 +225,12 @@
               </li>
             </ul>
           </div>
-          <div class="widget stick-widget px-3 w-100">
+          <div class="widget stick-widget px-3 w-100 mt-3">
             <h4 class="main-title">
               <i class="icofont-paper"></i>
               預計開放問卷
             </h4>
-            <ul class="watchlist">
+            <ul class="watchlist m-0">
               <li>
                 <div class="d-flex">
                   <figure>
@@ -318,10 +328,10 @@
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </nav>
 
-      <div class="gap d-flex" id="quest-contents">
+      <div class="gap d-flex pt-5" id="quest-contents">
         <div class="container">
           <div class="row">
             <!-- sidebar -->
