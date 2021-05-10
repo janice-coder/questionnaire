@@ -22,19 +22,42 @@
         class="responsive-header d-flex align-items-center justify-content-between d-lg-none d-xl-none"
       >
         <div class="logo res">
-          <a class="h5 d-block m-0 mt-1" href="index.html"> Questionnaire </a>
+          <a class="h5 d-block m-0" href="index.html">
+            <i class="icofont-paper"></i> Q
+          </a>
         </div>
-        <div class="user-avatar mobile">
-          現有
+        <div>
+          <a href="circulation.html">
+            發行<strong class="h5 text-info">9,527</strong>點 / 600M點</a
+          >
+        </div>
+        <div>
+          <a href="rate.html"
+            ><span class="badge badge-pill badge-secondary py-2"
+              ><strong>$USD</strong></span
+            ></a
+          >
+        </div>
+        <!-- <div class="user-avatar mobile">
+          <i class="icofont-diamond h6"></i>
           <strong class="h4 text-info">135</strong>
           點
-        </div>
+        </div> -->
         <div class="right-compact">
           <button
-            class="button info btn-sm uk-button-default dropdown-arrow p-2 mr-2"
+            class="button info btn-sm uk-button-default dropdown-arrow p-2"
           >
-            <i class="icofont-wallet"></i>錢包
+            <i class="icofont-diamond h6"></i>
+            <strong class="h6">135</strong>
           </button>
+          <div uk-dropdown="mode: click;pos: bottom-right">
+            <ul class="uk-nav uk-dropdown-nav">
+              <li><a href="javascript:;">點數兌換</a></li>
+              <li><a href="javascript:;">點數交換</a></li>
+              <li><a href="javascript:;">推薦好友賺</a></li>
+              <li><a href="javascript:;">帳號設定</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <!--web header -->
@@ -42,27 +65,42 @@
         <div class="topbar stick">
           <div class="logo">
             <a href="index.html">
-              <h4 class="h4">Questionnaire</h4>
+              <h4 class="h4"><i class="icofont-paper"></i> Questionnaire</h4>
             </a>
           </div>
-          <div class="searches">
+          <!-- <div class="searches">
             <form method="post">
               <input type="text" placeholder="Search..." />
               <button type="submit"><i class="icofont-search"></i></button>
               <span class="cancel-search"><i class="icofont-close"></i></span>
             </form>
-          </div>
+          </div> -->
           <ul class="web-elements">
             <li>
-              現在已擁有
-              <strong class="h4 text-info">135</strong>
-              點
+              <a href="circulation.html">
+                已發行 <strong class="h5 text-info">9,527</strong>點 / 6,000,000
+                點</a
+              >
             </li>
+            <li>
+              <a href="rate.html" class="">
+                <span class="badge badge-pill badge-secondary py-2"
+                  ><strong>美金 $USD</strong></span
+                >
+              </a>
+            </li>
+            <!-- <li>
+              <i class="icofont-diamond h6"></i>
+              <strong class="h3 text-info">135</strong>
+              點
+            </li> -->
             <li>
               <button
                 class="button info btn-sm uk-button-default dropdown-arrow"
               >
-                <i class="icofont-wallet"></i>我的錢包
+                <i class="icofont-diamond h6"></i>
+                <strong class="h4">135</strong>
+                點
               </button>
               <div uk-dropdown>
                 <ul class="uk-nav uk-dropdown-nav">
@@ -79,6 +117,7 @@
           </ul>
         </div>
       </header>
+
       <!--mobile nav sidebar -->
       <nav class="sidebar">
         <div class="sidemenu">
