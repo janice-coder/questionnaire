@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Goldman';
+  src: url('../css/goldman/GoldmanSans_W_Rg.woff2') format('woff2');
+}
+/*===============
+***General Styling 
+===============*/
+html,
+body {
+  font-family: 'Goldman', sans-serif;
+}
+body {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #3e3f5e;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+p {
+  color: #7d7e9e;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Goldman', sans-serif;
+  margin-top: 0;
+  font-weight: 300;
+}
+/*span{
+    color: #adafca;
+}*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Goldman', sans-serif;
+  margin: 0;
+  color: #3e3f5e;
+}
+ul,
+ol {
+  margin-top: 0;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  outline: none;
+  color: inherit;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  -ms-text-decoration: none;
+  -o-text-decoration: none;
+  text-decoration: none;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+ins {
+  background: transparent;
+}

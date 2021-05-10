@@ -1,0 +1,59 @@
+.nightview {
+  .watchlist {
+    > li.active {
+      background: transparent;
+    }
+  }
+}
+.uk-accordion-content {
+  margin: 20px 0;
+}
+.hover-pointer {
+  cursor: pointer;
+}
+.w-30 {
+  width: 30px;
+}
+.sidebar {
+  .widget {
+    li {
+      a {
+        display: flex;
+        position: relative;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.button.grey.circle {
+  border-radius: 30px;
+}
+a.button.grey.circle {
+  border-radius: 30px;
+}
+.sidemenu {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  z-index: 11;
+  button {
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    transform: rotate(-90deg);
+    border: 0 !important;
+    background: transparent !important;
+    color: #62d76b !important;
+  }
+}
+nav.sidebar {
+  left: -250px;
+}
+.icofont-book-mark {
+  font-size: 3.5rem;
+}
+.uk-dropdown {
+  min-width: 150px;
+}
