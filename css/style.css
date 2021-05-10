@@ -51,14 +51,19 @@ create date: January-2021
 45- dark theme stylings. 
 */
 /*=============== google fonts ===================*/
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap'); */
+@font-face {
+  font-family: 'Goldman';
+  src: url('../css/goldman/GoldmanSans_W_Rg.woff2') format('woff2');
+}
 /*===============
 ***General Styling 
 ===============*/
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Goldman', sans-serif;
 }
 body {
   float: left;
@@ -74,7 +79,7 @@ p {
   color: #7d7e9e;
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Goldman', sans-serif;
   margin-top: 0;
   font-weight: 300;
 }
@@ -87,7 +92,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Goldman', sans-serif;
   margin: 0;
   color: #3e3f5e;
 }
@@ -554,7 +559,7 @@ iframe {
   background: #f5f5f5 none repeat scroll 0 0;
   border-bottom: 1px solid #e1e8ed;
   line-height: 40px;
-  padding: 5px 15px;
+  padding: 5px;
   position: relative;
   width: 100%;
   z-index: 9999999;
@@ -599,9 +604,8 @@ iframe {
   text-align: left;
 }
 .right-compact {
-  float: right;
   text-align: right;
-  width: 28%;
+  width: 22%;
 }
 
 .user-avatar.mobile > .name h4 {
@@ -1174,7 +1178,9 @@ header.transparent .topbar {
 }
 .topbar {
   border-bottom: 1px solid #e1e8ed;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background: #f5f5f5;
   padding: 10px 15px;
@@ -1607,7 +1613,7 @@ header.transparent .topbar {
   max-width: 130px;
   padding: 8px;
 }
-.topbar ul.web-elements > li > a {
+/* .topbar ul.web-elements > li > a {
   background: #deebf3 none repeat scroll 0 0;
   border: 1px solid #088dcd;
   border-radius: 100%;
@@ -1615,17 +1621,17 @@ header.transparent .topbar {
   line-height: 37px;
   text-align: center;
   width: 37px;
-}
+} */
 .topbar ul.web-elements > li {
   margin: 0 5px;
   position: relative;
 }
-.topbar ul.web-elements > li > a > i {
+/* .topbar ul.web-elements > li > a > i {
   display: inline-block;
   font-size: 16px;
   line-height: initial;
   vertical-align: text-bottom;
-}
+} */
 .topbar ul.web-elements > li > span {
   background: #ff7373 none repeat scroll 0 0;
   color: #fff;
@@ -6298,7 +6304,7 @@ input:checked + .switch:active::before {
   font-weight: 500;
   text-transform: none;
   color: #333;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Goldman', sans-serif;
   margin-bottom: 5px;
   margin-top: 0;
 }
@@ -6307,7 +6313,7 @@ input:checked + .switch:active::before {
   font-weight: 400;
   text-transform: none;
   color: #686f7a;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Goldman', sans-serif;
   line-height: 12px;
 }
 .drag-text i {

@@ -12,7 +12,7 @@
 .leter-meta > span,
 .quick-links > li:hover:before,
 .measure > i,
-.topbar ul.web-elements li a i,
+/* .topbar ul.web-elements li a i, */
 .friend-name > ins > a,
 .see-all,
 .friend-meta > a,
@@ -106,21 +106,18 @@ a.invite,
 .walt-balance > a,
 .add-currency:hover,
 .big-deals > a,
-.prod-detail > ul.item-info > li > a
-{
-	color: #088dcd;	
+.prod-detail > ul.item-info > li > a {
+  color: #088dcd;
 }
 
-
 svg {
-    fill: rgba(8, 141, 205, 0.09);
-    stroke: #088dcd;
+  fill: rgba(8, 141, 205, 0.09);
+  stroke: #088dcd;
 }
 
 /*path.icon{
 	fill: #fff;
 }*/
-
 
 /*=========================
 	BACKGROUND COLOR
@@ -171,16 +168,13 @@ table.table-striped tbody tr td a.button:hover,
 .add-currency,
 .walt-balance > a:hover,
 .nav.nav-tabs.walllt-btn > li > a.active,
-.card-poup-meta > button
-{
-	background: #088dcd;
+.card-poup-meta > button {
+  background: #088dcd;
 }
 
 .stroke-solid {
-	fill: #088dcd;
+  fill: #088dcd;
 }
-
-
 
 /*=========================
 	BORDER COLOR
@@ -206,9 +200,11 @@ ul.chatting-area li > figure img,
 .chat-rooms li > a.say-hi,
 .new-comment form input:focus,
 .checkbox label:before,
-.checkbox input[type="checkbox"]:checked ~ label:before,
+.checkbox input[type='checkbox']:checked ~ label:before,
 .user > a,
-.uk-input:focus, .uk-select:focus, .uk-textarea:focus,
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus,
 .post-new .c-form input:focus,
 .blog-post-meta > a.button:hover,
 .pix-filter > li > a.active,
@@ -216,18 +212,14 @@ ul.chatting-area li > figure img,
 .card-poup-meta > ul > li.active,
 .security > ul > li.active,
 .add-currency:hover,
-.walt-balance > a
-{
-	border-color: #088dcd;	
+.walt-balance > a {
+  border-color: #088dcd;
 }
 .user-tabs .nav-tabs > li > a.active,
 .checkbox label:after,
-.light-bg .uk-tab > li a.active{
-	border-bottom-color: #088dcd;
+.light-bg .uk-tab > li a.active {
+  border-bottom-color: #088dcd;
 }
-.checkbox label:after{
-	border-left-color: #088dcd;
+.checkbox label:after {
+  border-left-color: #088dcd;
 }
-
-
-

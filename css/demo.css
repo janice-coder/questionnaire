@@ -42,3 +42,6 @@ nav.sidebar {
 .icofont-book-mark {
   font-size: 3.5rem;
 }
+.uk-dropdown {
+  min-width: 150px;
+}
