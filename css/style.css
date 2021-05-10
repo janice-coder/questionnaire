@@ -125,6 +125,9 @@ img {
 ins {
   background: transparent;
 }
+button {
+  font-family: 'Goldman', sans-serif;
+}
 .overlap {
   position: relative;
   margin-top: -82px;
