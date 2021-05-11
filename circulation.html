@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="./css/color.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/demo.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+      integrity="sha512-AFwxAkWdvxRd9qhYYp1qbeRZj6/iTNmJ2GFwcxsMOzwwTaRwz2a/2TX225Ebcj3whXte1WGQb38cXE5j7ZQw3g=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <!-- <script src="https://code.highcharts.com/stock/modules/exporting.js"></script> -->
+    <!-- <script src="https://code.highcharts.com/stock/modules/export-data.js"></script> -->
   </head>
 
   <body>
@@ -352,7 +361,11 @@
 
       <div class="gap d-flex" id="page-contents">
         <div class="container">
-          <div class="row">123</div>
+          <div class="row">
+            <div class="col-12 m-auto">
+              <div id="container" style="height: 400px; min-width: 310px"></div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- footer -->
@@ -370,13 +383,10 @@
     </div>
 
     <!-- js area -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
-      integrity="sha512-AFwxAkWdvxRd9qhYYp1qbeRZj6/iTNmJ2GFwcxsMOzwwTaRwz2a/2TX225Ebcj3whXte1WGQb38cXE5j7ZQw3g=="
-      crossorigin="anonymous"
-    ></script>
     <script src="./js/vendor/uikit.min.js"></script>
-    <script src="./js/vendor/owl.carousel.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script src="./js/chart-demo.js"></script>
+    <script></script>
   </body>
 </html>
