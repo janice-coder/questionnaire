@@ -1,6 +1,6 @@
-Highcharts.getJSON('./js/demo.json', function (data) {
+Highcharts.getJSON('./js/circulation-demo.json', function (data) {
   // create the chart
-  Highcharts.stockChart('container', {
+  Highcharts.stockChart('circulationChart', {
     chart: {
       alignTicks: false,
     },
@@ -16,7 +16,7 @@ Highcharts.getJSON('./js/demo.json', function (data) {
     series: [
       {
         type: 'column',
-        name: '發行數量',
+        name: '日發行量',
         data: data,
         dataGrouping: {
           units: [
