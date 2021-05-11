@@ -112,7 +112,7 @@ a.invite,
 
 svg {
   fill: rgba(8, 141, 205, 0.09);
-  stroke: #088dcd;
+  /* stroke: #088dcd; */
 }
 
 /*path.icon{

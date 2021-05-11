@@ -7,14 +7,67 @@ Highcharts.getJSON('./js/circulation-demo.json', function (data) {
 
     rangeSelector: {
       selected: 0, // 預設選擇第幾個range
+      buttons: [
+        {
+          type: 'month',
+          count: 1,
+          text: '30日',
+          dataGrouping: {
+            forced: true,
+            units: [['day', [1]]],
+          },
+        },
+        {
+          type: 'month',
+          count: 3,
+          text: '3個月',
+          dataGrouping: {
+            forced: true,
+            units: [['week', [1]]],
+          },
+        },
+        {
+          type: 'month',
+          count: 6,
+          text: '6個月',
+          dataGrouping: {
+            forced: true,
+            units: [['week', [1]]],
+          },
+        },
+        {
+          type: 'year',
+          count: 1,
+          text: '1年',
+          dataGrouping: {
+            forced: true,
+            units: [['week', [1]]],
+          },
+        },
+        {
+          type: 'all',
+          text: '全部',
+          dataGrouping: {
+            forced: true,
+            units: [['month', [1]]],
+          },
+        },
+      ],
+      buttonTheme: {
+        width: 60,
+      },
     },
 
     title: {
-      text: '發行數量',
+      text: '點數發行數量',
+    },
+    navigator: {
+      height: 0,
     },
 
     series: [
       {
+        showInNavigator: false,
         type: 'column',
         name: '日發行量',
         data: data,
