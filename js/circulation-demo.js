@@ -64,6 +64,10 @@ Highcharts.getJSON('./js/circulation-demo.json', function (data) {
     navigator: {
       height: 0,
     },
+    // 右下英文字
+    credits: {
+      enabled: false,
+    },
 
     series: [
       {
