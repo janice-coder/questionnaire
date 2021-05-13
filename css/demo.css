@@ -24,7 +24,7 @@ a.button.grey.circle {
 .sidemenu {
   position: absolute;
   right: 0;
-  top: 35px;
+  top: 5rem;
   z-index: 11;
 }
 .sidemenu button {

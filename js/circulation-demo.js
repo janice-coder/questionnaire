@@ -57,12 +57,15 @@ Highcharts.getJSON('./js/circulation-demo.json', function (data) {
         width: 60,
       },
     },
+    scrollbar: {
+      enabled: false,
+    },
 
     title: {
       text: '點數發行數量',
     },
     navigator: {
-      height: 0,
+      enabled: false,
     },
     // 右下英文字
     credits: {

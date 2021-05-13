@@ -104,6 +104,10 @@ const buttonsConfig = [
 //     createChart();
 //   }
 // }
+function pointFormat() {
+  console.log(this.y);
+  return 'The value for <b>' + this.x + '</b> is <b>' + this.y;
+}
 
 function success(data) {
   // Create the chart
@@ -120,7 +124,7 @@ function success(data) {
       text: '點數兌現匯率走勢',
     },
     navigator: {
-      height: 0,
+      enabled: false,
     },
     // 右下英文字
     credits: {
@@ -131,22 +135,22 @@ function success(data) {
       enabled: false,
     },
     tooltip: {
-      pointFormat: '{series.name}: <b>{point.y:.1f}</b><br/>',
+      pointFormat: '{series.name}: <b>{point.y:.2f}</b><br/>',
+      // formatter: pointFormat,
+      shared: true,
     },
-    plotOptions: {
-      series: {
-        // general options for all series
-      },
-      abands: {
-        // shared options for all abands series
+    xAxis: {
+      type: 'datetime',
+      labels: {
+        format: '{value:%Y-%m-%d}',
       },
     },
 
     series: [
+      // 數據1
       {
         showInNavigator: false,
         name: '當日匯率',
-        // keys: ['name', 'y', 'sliced', 'selected'],
         data: data,
         marker: {
           enabled: true,
@@ -157,9 +161,10 @@ function success(data) {
           valueDecimals: 2,
         },
       },
+      // 數據2
       {
         showInNavigator: false,
-        name: '1點 兌 美金',
+        name: '預估 1點 兌 美金',
         data: data,
         marker: {
           enabled: true,

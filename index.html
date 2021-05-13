@@ -19,45 +19,45 @@
   <body>
     <div class="theme-layout">
       <!-- mobile header -->
-      <div
-        class="responsive-header d-flex align-items-center justify-content-between d-lg-none d-xl-none"
-      >
-        <div class="logo res">
-          <a class="h5 d-block m-0" href="index.html">
-            <i class="icofont-paper"></i> Q
-          </a>
+      <div class="responsive-header d-lg-none d-xl-none">
+        <div
+          class="d-flex align-items-center justify-content-between border-bottom"
+        >
+          <div class="logo res">
+            <a class="h3 d-flex m-0" href="index.html">
+              <i class="icofont-paper mr-1"></i> <strong>Questionnaire</strong>
+            </a>
+          </div>
+          <div class="right-compact">
+            <button
+              class="button info btn-sm uk-button-default dropdown-arrow p-2"
+            >
+              <i class="icofont-diamond h6"></i>
+              <strong class="h6">135</strong>
+            </button>
+            <div uk-dropdown="mode: click;pos: bottom-right">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="javascript:;">點數兌換</a></li>
+                <li><a href="javascript:;">點數交換</a></li>
+                <li><a href="javascript:;">推薦好友賺</a></li>
+                <li><a href="javascript:;">帳號設定</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <a href="circulation.html">
-            發行<strong class="h5 text-info">9,527</strong>點 / 600M點</a
-          >
-        </div>
-        <div>
-          <a href="rate.html"
-            ><span class="badge badge-pill badge-secondary py-2"
-              ><strong>$USD</strong></span
-            ></a
-          >
-        </div>
-        <!-- <div class="user-avatar mobile">
-          <i class="icofont-diamond h6"></i>
-          <strong class="h4 text-info">135</strong>
-          點
-        </div> -->
-        <div class="right-compact">
-          <button
-            class="button info btn-sm uk-button-default dropdown-arrow p-2"
-          >
-            <i class="icofont-diamond h6"></i>
-            <strong class="h6">135</strong>
-          </button>
-          <div uk-dropdown="mode: click;pos: bottom-right">
-            <ul class="uk-nav uk-dropdown-nav">
-              <li><a href="javascript:;">點數兌換</a></li>
-              <li><a href="javascript:;">點數交換</a></li>
-              <li><a href="javascript:;">推薦好友賺</a></li>
-              <li><a href="javascript:;">帳號設定</a></li>
-            </ul>
+
+        <div class="d-flex align-items-center justify-content-around">
+          <div class="">
+            <a href="circulation.html">
+              發行<strong class="h5 text-info">9,527</strong>點 / 600M點
+            </a>
+          </div>
+          <div>
+            <a href="rate.html"
+              ><span class="badge badge-pill badge-secondary py-2"
+                ><strong>點數預估可換 45$USD</strong></span
+              ></a
+            >
           </div>
         </div>
       </div>
@@ -77,16 +77,16 @@
             </form>
           </div> -->
           <ul class="web-elements">
-            <li class="circulation">
+            <li>
               <a href="circulation.html">
                 已發行 <strong class="h5 text-info">9,527</strong>點 / 6,000,000
                 點</a
               >
             </li>
-            <li class="rate">
+            <li>
               <a href="rate.html" class="">
                 <span class="badge badge-pill badge-secondary py-2"
-                  ><strong>美金 $USD</strong></span
+                  ><strong>點數預估可換 45 $USD</strong></span
                 >
               </a>
             </li>

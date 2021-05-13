@@ -202,7 +202,7 @@
     display: block;
   }
   nav.sidebar {
-    padding-top: 85px;
+    padding-top: 6.3rem;
   }
   .blog-post-meta {
     max-width: 46.6%;
@@ -878,7 +878,7 @@
 
 @media screen and (max-width: 640px) {
   .gap {
-    padding: 50px 0;
+    padding: 4rem 0;
   }
   .error-data > h1 {
     font-size: 40px;
