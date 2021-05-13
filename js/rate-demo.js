@@ -44,7 +44,68 @@ const buttonsConfig = [
     },
   },
 ];
-Highcharts.getJSON('./js/rate-demo.json', function (data) {
+// let seriesOptions = [],
+//   seriesCounter = 0,
+//   names = ['rate-demo', 'rate-demo2'];
+// function createChart() {
+//   Highcharts.stockChart('rateChart', {
+//     rangeSelector: {
+//       selected: 4,
+//     },
+
+//     yAxis: {
+//       labels: {
+//         formatter: function () {
+//           return (this.value > 0 ? ' + ' : '') + this.value + '%';
+//         },
+//       },
+//       plotLines: [
+//         {
+//           value: 0,
+//           width: 2,
+//           color: 'silver',
+//         },
+//       ],
+//     },
+
+//     plotOptions: {
+//       series: {
+//         compare: 'percent',
+//         showInNavigator: true,
+//       },
+//     },
+
+//     tooltip: {
+//       pointFormat:
+//         '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)<br/>',
+//       valueDecimals: 2,
+//       split: true,
+//     },
+
+//     series: seriesOptions,
+//   });
+// }
+// function success(data) {
+//   let name = this.url.match(/(rate-demo|rate-demo2)/)[0].toUpperCase();
+//   console.log(name);
+//   let i = names.indexOf(name);
+//   seriesOptions[i] = {
+//     name: name,
+//     data: data,
+//   };
+//   console.log(seriesOptions[i]);
+
+//   // As we're loading the data asynchronously, we don't know what order it
+//   // will arrive. So we keep a counter and create the chart when all the data is loaded.
+//   console.log(names.length);
+//   seriesCounter += 1;
+
+//   if (seriesCounter === names.length) {
+//     createChart();
+//   }
+// }
+
+function success(data) {
   // Create the chart
   Highcharts.stockChart('rateChart', {
     rangeSelector: {
@@ -66,11 +127,39 @@ Highcharts.getJSON('./js/rate-demo.json', function (data) {
       enabled: false,
       text: 'Questionnaire',
     },
+    scrollbar: {
+      enabled: false,
+    },
+    tooltip: {
+      pointFormat: '{series.name}: <b>{point.y:.1f}</b><br/>',
+    },
+    plotOptions: {
+      series: {
+        // general options for all series
+      },
+      abands: {
+        // shared options for all abands series
+      },
+    },
 
     series: [
       {
         showInNavigator: false,
         name: '當日匯率',
+        // keys: ['name', 'y', 'sliced', 'selected'],
+        data: data,
+        marker: {
+          enabled: true,
+          radius: 3,
+        },
+        shadow: true,
+        tooltip: {
+          valueDecimals: 2,
+        },
+      },
+      {
+        showInNavigator: false,
+        name: '1點 兌 美金',
         data: data,
         marker: {
           enabled: true,
@@ -83,4 +172,6 @@ Highcharts.getJSON('./js/rate-demo.json', function (data) {
       },
     ],
   });
-});
+}
+Highcharts.getJSON('./js/rate-demo.json', success);
+Highcharts.getJSON('./js/rate-demo2.json', success);
